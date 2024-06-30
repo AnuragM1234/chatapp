@@ -1,0 +1,27 @@
+.chats{
+    max-height: 450px;
+    overflow-y: auto;
+}
+.chat-bubble-container{
+    list-style: none;
+}
+.chat-bubble{
+    max-width: 450px;
+    list-style: none;
+    padding: 15px;
+    margin: 2px;
+    background: gray;
+    border-radius: 15px;
+    text-align: left;
+} 
+.from-message{
+    background-color: #03FFDD;
+    border-bottom-left-radius: 0;
+    position: relative;
+}
+.to-message{
+    background-color: #5FFF03;
+    border-bottom-right-radius: 0;
+    right: -100px;
+    position: relative;
+}
