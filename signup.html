@@ -71,7 +71,7 @@
                 <div class="col-md-4"></div>
                 <div class="col-md-8">
                   <button type="button" id="saveuser" class="btn btn-primary">Signup</button>
-                  <p class="text-black mb-2 mt-2">I already have an Account, <a href="/index.html" style="text-decoration: none;">Login instead</a></p>
+                  <p class="text-black mb-2 mt-2">I already have an Account, <a href="index.html" style="text-decoration: none;">Login instead</a></p>
                 </div>
               </div>
             </form>
@@ -107,7 +107,6 @@
         const email = document.getElementById('email').value;
         const password = document.getElementById('password').value;
         if(validateSignUpInputCredentials()){
-          console.log("Mia Khalifa");
           const auth = getAuth(app);
           createUserWithEmailAndPassword(auth, email, password).then((userCredentials)=>{
             const user = userCredentials.user;
@@ -116,7 +115,7 @@
               email: user.email
             }).then(()=>{
               alert('Successfully Registered');
-              location.href = '/index.html';
+              location.href = 'index.html';
             })
           }).catch((error)=>{
             const errorCode = error.code;
