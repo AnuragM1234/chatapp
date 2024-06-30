@@ -96,7 +96,7 @@
             const user = userCredentials.user;
             localStorage.setItem('logged_in_user_id', user.uid);
             localStorage.setItem('logged_in_user_email', user.email);
-            setTimeout(() => {location.href = '/starchat.html'}, 2000);
+            setTimeout(() => {location.href = 'starchat.html'}, 2000);
           }).catch((error)=>{
             const errorCode = error.code;
             const errorMessage = error.message;
