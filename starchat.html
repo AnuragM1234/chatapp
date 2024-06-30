@@ -65,10 +65,11 @@
     
       // Initialize Firebase
       const app = initializeApp(firebaseConfig);
-      var db = getDatabase();
+      const db = getDatabase();
       const userRef = ref(db,'registered_users');
       onValue(userRef, (snapShot)=>{
         const data=snapShot.val();
+        console.log(data);
         showUsers(data);
       })
       function showUsers(users){
@@ -81,7 +82,7 @@
       $(document).on('click',".loadchat", function(e){
         localStorage.setItem('chat_user_id', $(this).attr('data-user_id'));
         localStorage.setItem('chat_user_email', $(this).attr('data-user_email'));
-        setTimeout(() => {location.href = '/chat.html'}, 2000);
+        setTimeout(() => {location.href = 'chat.html'}, 2000);
       })
     </script>
     <script>
