@@ -13,7 +13,16 @@
     background: gray;
     border-radius: 15px;
     text-align: left;
-} 
+}
+.sent{
+    text-align: right;
+    margin-bottom: 10px;
+}
+.reply{
+    text-align: left;
+    margin-bottom: 10px;
+}
+
 .from-message{
     background-color: #03FFDD;
     border-bottom-left-radius: 0;
